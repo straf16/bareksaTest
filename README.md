@@ -12,6 +12,8 @@ $ git clone https://github.com/straf16/bareksaTest.git
 
 ## Running
 
+**Make sure mongodb is installed on your computer and it is running well**
+
 ```bash
 $ cd bareksaTest
 $ npm install
@@ -27,6 +29,27 @@ APP RUNNING ON PORT: 3000
 MONGODB CONNECT
 
 ...
+```
+
+## Testing
+
+**Make sure you have installed mocha globally**
+
+ `npm install -g mocha`
+
+```bash
+$ npm run test
+
+> NODE_ENV=testing mocha --exit
+
+  News Testing
+  ...
+  Topic Testing
+  ...
+  
+  12 passing (191ms)
+  
+  
 ```
 
 ## Configuration

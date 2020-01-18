@@ -38,7 +38,7 @@ class TopicController {
         name,
         newsId
       }, { new: true })
-      .then(result => res.status(201).json(result))
+      .then(result => res.status(200).json(result))
       .catch(next)
   }
   static addNews(req, res, next) {

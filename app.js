@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV==='development') require('dotenv').config()
+if (process.env.NODE_ENV) require('dotenv').config()
 
 require('./config/mongoose')
 const express = require('express')
