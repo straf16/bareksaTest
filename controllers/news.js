@@ -34,7 +34,13 @@ class NewsController {
   static getOne(req, res, next) {
     News
       .findById(req.params.id)
-      .then(result => res.status(200).json(result))
+      .then(result => {
+        if (result) {
+          res.status(200).json(result)
+        } else {
+          next({ status: 404, message: 'Not Found' })
+        }
+      })
       .catch(next)
   }
   static update(req, res, next) {
