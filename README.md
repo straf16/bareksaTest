@@ -7,7 +7,7 @@ You can use this API to manage news and topics.
 ## Installation
 
 ```bash
-​````{ "firstName": "John", "lastName": "Smith", "age": 25}````
+$ git clone https://github.com/straf16/bareksaTest.git
 ```
 
 ## Running
@@ -39,4 +39,3 @@ There are few environment variables that you must set
 ## Dependencies
 
 - Look [package.json](https://github.com/straf16/bareksaTest/blob/master/package.json)
-
